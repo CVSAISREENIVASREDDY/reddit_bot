@@ -423,7 +423,7 @@ def main(username):
         print("Username cannot be empty!")
         return
     
-    scraper = RedditUserScraper(headless=False)  # Set to True for headless mode
+    scraper = RedditUserScraper(headless=True)  # Set to True for headless mode
     
     try:
         print(f"Scraping data for user: {username}")
@@ -445,7 +445,7 @@ def main(username):
         print("Scraping completed!")
     
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"An error occurred: {e}") 
     finally:
         scraper.close() 
     
