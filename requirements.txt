@@ -1,0 +1,5 @@
+streamlit 
+selenium 
+json 
+time 
+google-generativeai
